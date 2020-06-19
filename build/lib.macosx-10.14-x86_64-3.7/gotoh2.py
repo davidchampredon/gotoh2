@@ -307,14 +307,11 @@ if __name__ == '__main__':
         
     else:
         for h, s in iter_fasta(args.infile):
-            
             trim_seq, inserts, norm_score = procrust_align(ref, s, aligner)
-            dc = map_coordinates(ref, s, aligner)
-            
             if norm_score < args.threshold:
                 continue
 
-            args.out.write('>{}\n{}\nDC:{}\n'.format(h, trim_seq, dc))
+            args.out.write('>{}\n{}\n'.format(h, trim_seq))
             if args.insfile:
                 for pos, nt in inserts:
                     args.insfile.write('{},{},{}\n'.format(h, pos, nt))

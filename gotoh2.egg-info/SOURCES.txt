@@ -1,0 +1,16 @@
+README.md
+gotoh2.py
+gotoh2_utils.py
+setup.py
+gotoh2.egg-info/PKG-INFO
+gotoh2.egg-info/SOURCES.txt
+gotoh2.egg-info/dependency_links.txt
+gotoh2.egg-info/not-zip-safe
+gotoh2.egg-info/top_level.txt
+models/BLOSUM62.csv
+models/Biopp.csv
+models/Biopp2.csv
+models/EmpHIV25.csv
+models/HYPHY_NUC.csv
+models/NWALIGN.csv
+src/_gotoh2.c
